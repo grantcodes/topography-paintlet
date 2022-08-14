@@ -1,6 +1,6 @@
 {
   "name": "@grantcodes/topography-paintlet",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A css paintlet to create a nice custom topography inspired background",
   "type": "module",
   "main": "dist/topography-paintlet.js",
