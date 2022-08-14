@@ -24,6 +24,7 @@ jobs:
         with:
           node-version: 16
           registry-url: "https://registry.npmjs.org"
+        if: ${{ steps.release.outputs.release_created }}
 
       - run: npm ci
         name: Install dependencies
