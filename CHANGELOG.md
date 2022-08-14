@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/grantcodes/topography-paintlet/compare/v1.0.0...v1.0.1) (2022-08-14)
+
+
+### Bug Fixes
+
+* **actions:** only setup node on release creation ([dfc5f98](https://github.com/grantcodes/topography-paintlet/commit/dfc5f986410c70abb8c7f4a7d5fdb0caa3713b3e))
+
 ## 1.0.0 (2022-08-14)
 
 
