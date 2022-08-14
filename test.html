@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+  </head>
+  <body>
+    <style>
+      html,
+      body,
+      .container {
+        min-height: 100vh;
+        padding: 0;
+        margin: 0;
+      }
+
+      .container {
+        background-color: #2a4858;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: paint(grantcodes-topography);
+        --topography-corner: top right;
+        --topography-colors: #106e7c, #00968e, #4abd8c, #9cdf7c, #fafa6e;
+      }
+    </style>
+    <div class="container"></div>
+
+    <!-- <script src="https://unpkg.com/css-paint-polyfill"></script> -->
+    <script>
+      CSS.paintWorklet.addModule("./dist/topography-paintlet.js");
+
+      // const el = document.querySelector('.container');
+      // const duration = 2000;
+      // const start = performance.now();
+      // // TODO: Get shapes not to change every time the enter property is updated.
+      // requestAnimationFrame(function raf(now) {
+      //   const count = Math.floor(now - start);
+      //   const progress = (count / duration) * 100;
+      //   el.style.cssText = `--topography-enter: ${progress};`;
+      //   if (count > duration) {
+      //     el.style.cssText = `--topography-enter: 100;`;
+      //     return;
+      //   }
+      //   requestAnimationFrame(raf);
+      // });
+    </script>
+  </body>
+</html>
